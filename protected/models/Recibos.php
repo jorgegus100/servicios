@@ -1,26 +1,21 @@
 <?php
 
 /**
- * This is the model class for table "estudiante".
+ * This is the model class for table "recibos".
  *
- * The followings are the available columns in table 'estudiante':
- * @property integer $idEstudiante
- * @property string $nomEstudiante
- * @property string $apellEstudiante
- * @property string $ciEstudiante
- * @property integer $idTutor
- *
- * The followings are the available model relations:
- * @property Tutor $idTutor0
+ * The followings are the available columns in table 'recibos':
+ * @property integer $idRecibos
+ * @property string $colegio
+ * @property integer $alumno
  */
-class Estudiante extends CActiveRecord
+class Recibos extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'estudiante';
+		return 'recibos';
 	}
 
 	/**
@@ -31,11 +26,11 @@ class Estudiante extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('idTutor', 'numerical', 'integerOnly'=>true),
-			array('nomEstudiante, apellEstudiante, ciEstudiante', 'length', 'max'=>50),
+			array('alumno', 'numerical', 'integerOnly'=>true),
+			array('colegio', 'length', 'max'=>50),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idEstudiante, nomEstudiante, apellEstudiante, ciEstudiante, idTutor', 'safe', 'on'=>'search'),
+			array('idRecibos, colegio, alumno', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -47,7 +42,6 @@ class Estudiante extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'idTutor0' => array(self::BELONGS_TO, 'Tutor', 'idTutor'),
 		);
 	}
 
@@ -57,11 +51,9 @@ class Estudiante extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'idEstudiante' => 'Id Estudiante',
-			'nomEstudiante' => 'Nombre',
-			'apellEstudiante' => 'Apell Estudiante',
-			'ciEstudiante' => 'Ci Estudiante',
-			'idTutor' => 'Id Tutor',
+			'idRecibos' => 'Id Recibos',
+			'colegio' => 'Colegio',
+			'alumno' => 'Alumno',
 		);
 	}
 
@@ -83,11 +75,9 @@ class Estudiante extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('idEstudiante',$this->idEstudiante);
-		$criteria->compare('nomEstudiante',$this->nomEstudiante,true);
-		$criteria->compare('apellEstudiante',$this->apellEstudiante,true);
-		$criteria->compare('ciEstudiante',$this->ciEstudiante,true);
-		$criteria->compare('idTutor',$this->idTutor);
+		$criteria->compare('idRecibos',$this->idRecibos);
+		$criteria->compare('colegio',$this->colegio,true);
+		$criteria->compare('alumno',$this->alumno);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -98,7 +88,7 @@ class Estudiante extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Estudiante the static model class
+	 * @return Recibos the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
