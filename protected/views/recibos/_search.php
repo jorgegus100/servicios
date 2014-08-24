@@ -17,13 +17,33 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'colegio'); ?>
-		<?php echo $form->textField($model,'colegio',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->label($model,'colegioRecibo'); ?>
+		<?php echo $form->textField($model,'colegioRecibo',array('size'=>50,'maxlength'=>50)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'alumno'); ?>
-		<?php echo $form->textField($model,'alumno'); ?>
+		<?php echo $form->label($model,'alumnoRecibo'); ?>
+		<?php echo $form->textField($model,'alumnoRecibo'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'fechEmisionRecibo'); ?>
+		<?php echo $form->textField($model,'fechEmisionRecibo'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'estadoRecibo'); ?>
+		<?php echo $form->textField($model,'estadoRecibo',array('size'=>50,'maxlength'=>50)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'conceptoRecibo'); ?>
+		<?php echo $form->textField($model,'conceptoRecibo',array('size'=>50,'maxlength'=>50)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'importeRecibo'); ?>
+		<?php echo $form->textField($model,'importeRecibo'); ?>
 	</div>
 
 	<div class="row buttons">

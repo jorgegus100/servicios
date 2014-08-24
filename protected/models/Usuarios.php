@@ -55,8 +55,8 @@ class Usuarios extends CActiveRecord
 	{
 		return array(
 			'idUsuario' => 'Id Usuario',
-			'nomUsuario' => 'Nom Usuario',
-			'apellUsuario' => 'Apell Usuario',
+			'nomUsuario' => 'Nombre',
+			'apellUsuario' => 'Apellido',
 			'login' => 'Login',
 			'password' => 'Password',
 			'nivel' => 'Nivel',

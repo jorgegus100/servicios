@@ -22,7 +22,11 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'idRecibos',
-		'colegio',
-		'alumno',
+		'colegioRecibo',
+		'alumnoRecibo',
+		'fechEmisionRecibo',
+		'estadoRecibo',
+		'conceptoRecibo',
+		'importeRecibo',
 	),
 )); ?>

@@ -7,8 +7,21 @@
  * @property integer $idTutor
  * @property string $nomTutor
  * @property string $apellTutor
+ * @property string $apell2Tutor
  * @property string $direcTutor
- * @property string $ciTutor
+ * @property string $dniTutor
+ * @property integer $sexoTutor
+ * @property string $relAlumTutor
+ * @property integer $principalTutor
+ * @property string $calleTutor
+ * @property string $numCasaTutor
+ * @property string $pisoTutor
+ * @property string $provinciaTutor
+ * @property string $localidadTutor
+ * @property string $codPostalTutor
+ * @property integer $telfTutor
+ * @property integer $telf2Tutor
+ * @property string $emailTutor
  *
  * The followings are the available model relations:
  * @property Estudiante[] $estudiantes
@@ -31,10 +44,13 @@ class Tutor extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nomTutor, apellTutor, direcTutor, ciTutor', 'length', 'max'=>50),
+			array('nomTutor, apellTutor, apell2Tutor, dniTutor, emailTutor', 'required'),
+			array('sexoTutor, principalTutor, telfTutor, telf2Tutor', 'numerical', 'integerOnly'=>true),
+			array('nomTutor, apellTutor, apell2Tutor, direcTutor, dniTutor, relAlumTutor, calleTutor, numCasaTutor, pisoTutor, provinciaTutor, localidadTutor, codPostalTutor, emailTutor', 'length', 'max'=>50),
+			array('emailTutor', 'email'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idTutor, nomTutor, apellTutor, direcTutor, ciTutor', 'safe', 'on'=>'search'),
+			array('idTutor, nomTutor, apellTutor, apell2Tutor, direcTutor, dniTutor, sexoTutor, relAlumTutor, principalTutor, calleTutor, numCasaTutor, pisoTutor, provinciaTutor, localidadTutor, codPostalTutor, telfTutor, telf2Tutor, emailTutor', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -57,10 +73,23 @@ class Tutor extends CActiveRecord
 	{
 		return array(
 			'idTutor' => 'Id Tutor',
-			'nomTutor' => 'Nom Tutor',
-			'apellTutor' => 'Apell Tutor',
-			'direcTutor' => 'Direc Tutor',
-			'ciTutor' => 'Ci Tutor',
+			'nomTutor' => 'Nombre',
+			'apellTutor' => '1er Apellido',
+			'apell2Tutor' => '2do Apellido',
+			'direcTutor' => 'Direccion',
+			'dniTutor' => 'D.N.I.',
+			'sexoTutor' => 'Sexo',
+			'relAlumTutor' => 'Rel. Alumno',
+			'principalTutor' => 'Tutor Principal',
+			'calleTutor' => 'Calle',
+			'numCasaTutor' => 'Num',
+			'pisoTutor' => 'Piso',
+			'provinciaTutor' => 'Provincia',
+			'localidadTutor' => 'Localidad',
+			'codPostalTutor' => 'Cod. Postal',
+			'telfTutor' => 'Teléfono',
+			'telf2Tutor' => 'Teléf. Alternativo',
+			'emailTutor' => 'Email',
 		);
 	}
 
@@ -85,8 +114,21 @@ class Tutor extends CActiveRecord
 		$criteria->compare('idTutor',$this->idTutor);
 		$criteria->compare('nomTutor',$this->nomTutor,true);
 		$criteria->compare('apellTutor',$this->apellTutor,true);
+		$criteria->compare('apell2Tutor',$this->apell2Tutor,true);
 		$criteria->compare('direcTutor',$this->direcTutor,true);
-		$criteria->compare('ciTutor',$this->ciTutor,true);
+		$criteria->compare('dniTutor',$this->dniTutor,true);
+		$criteria->compare('sexoTutor',$this->sexoTutor);
+		$criteria->compare('relAlumTutor',$this->relAlumTutor,true);
+		$criteria->compare('principalTutor',$this->principalTutor);
+		$criteria->compare('calleTutor',$this->calleTutor,true);
+		$criteria->compare('numCasaTutor',$this->numCasaTutor,true);
+		$criteria->compare('pisoTutor',$this->pisoTutor,true);
+		$criteria->compare('provinciaTutor',$this->provinciaTutor,true);
+		$criteria->compare('localidadTutor',$this->localidadTutor,true);
+		$criteria->compare('codPostalTutor',$this->codPostalTutor,true);
+		$criteria->compare('telfTutor',$this->telfTutor);
+		$criteria->compare('telf2Tutor',$this->telf2Tutor);
+		$criteria->compare('emailTutor',$this->emailTutor,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

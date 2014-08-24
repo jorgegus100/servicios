@@ -5,8 +5,12 @@
  *
  * The followings are the available columns in table 'recibos':
  * @property integer $idRecibos
- * @property string $colegio
- * @property integer $alumno
+ * @property string $colegioRecibo
+ * @property integer $alumnoRecibo
+ * @property string $fechEmisionRecibo
+ * @property string $estadoRecibo
+ * @property string $conceptoRecibo
+ * @property double $importeRecibo
  */
 class Recibos extends CActiveRecord
 {
@@ -26,11 +30,13 @@ class Recibos extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('alumno', 'numerical', 'integerOnly'=>true),
-			array('colegio', 'length', 'max'=>50),
+			array('alumnoRecibo', 'numerical', 'integerOnly'=>true),
+			array('importeRecibo', 'numerical'),
+			array('colegioRecibo, estadoRecibo, conceptoRecibo', 'length', 'max'=>50),
+			array('fechEmisionRecibo', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idRecibos, colegio, alumno', 'safe', 'on'=>'search'),
+			array('idRecibos, colegioRecibo, alumnoRecibo, fechEmisionRecibo, estadoRecibo, conceptoRecibo, importeRecibo', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -52,8 +58,12 @@ class Recibos extends CActiveRecord
 	{
 		return array(
 			'idRecibos' => 'Id Recibos',
-			'colegio' => 'Colegio',
-			'alumno' => 'Alumno',
+			'colegioRecibo' => 'Colegio',
+			'alumnoRecibo' => 'Alumno',
+			'fechEmisionRecibo' => 'Fech. Emision',
+			'estadoRecibo' => 'Estado',
+			'conceptoRecibo' => 'Concepto',
+			'importeRecibo' => 'Importe',
 		);
 	}
 
@@ -76,8 +86,12 @@ class Recibos extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('idRecibos',$this->idRecibos);
-		$criteria->compare('colegio',$this->colegio,true);
-		$criteria->compare('alumno',$this->alumno);
+		$criteria->compare('colegioRecibo',$this->colegioRecibo,true);
+		$criteria->compare('alumnoRecibo',$this->alumnoRecibo);
+		$criteria->compare('fechEmisionRecibo',$this->fechEmisionRecibo,true);
+		$criteria->compare('estadoRecibo',$this->estadoRecibo,true);
+		$criteria->compare('conceptoRecibo',$this->conceptoRecibo,true);
+		$criteria->compare('importeRecibo',$this->importeRecibo);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

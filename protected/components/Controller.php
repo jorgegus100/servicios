@@ -10,6 +10,33 @@ class Controller extends CController
 	 * meaning using a single column layout. See 'protected/views/layouts/column1.php'.
 	 */
 	public $layout='//layouts/column1';
+    public $menuUsuarios=array(
+        array('label'=>'Administrar Usuarios', 'url'=>array('usuarios/admin')),
+        array('label'=>'Crear', 'url'=>array('usuarios/create')),
+
+    );
+    public $menuEstudiantes=array(
+        array('label'=>'Administrar Estudiantes', 'url'=>array('estudiante/admin')),
+        array('label'=>'Crear Estudiante', 'url'=>array('estudiante/create')),
+        array('label'=>'Administrar Tutores', 'url'=>array('tutor/admin')),
+        array('label'=>'Crear Tutor', 'url'=>array('tutor/create')),
+
+    );
+    public $menuCentros=array(
+        array('label'=>'Administrar Centros', 'url'=>array('centros/admin')),
+        array('label'=>'Crear Centros', 'url'=>array('centros/create')),
+        array('label'=>'Administrar Pagadores', 'url'=>array('pagador/admin')),
+        array('label'=>'Crear Pagador', 'url'=>array('pagador/create')),
+
+    );
+    public $menuMenues=array(
+        array('label'=>'Administrar Menus', 'url'=>array('menu/admin')),
+        array('label'=>'Crear Menu', 'url'=>array('menu/create')),
+        );
+    public $menuRecibos=array(
+        array('label'=>'Administrar Recibos', 'url'=>array('recibos/admin')),
+        array('label'=>'Crear Recibo', 'url'=>array('recibos/create')),
+    );
 	/**
 	 * @var array context menu items. This property will be assigned to {@link CMenu::items}.
 	 */

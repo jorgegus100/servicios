@@ -32,7 +32,7 @@ class UsuariosController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','admin','delete'),
+				'actions'=>array('create','update'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -69,9 +69,8 @@ class UsuariosController extends Controller
 
 		if(isset($_POST['Usuarios']))
 		{
-			
 			$model->attributes=$_POST['Usuarios'];
-			$model->password=sha1($_POST['Usuarios']['password']);
+            $model->password=sha1($_POST['Usuarios']['password']);
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->idUsuario));
 		}

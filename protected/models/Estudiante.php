@@ -7,10 +7,37 @@
  * @property integer $idEstudiante
  * @property string $nomEstudiante
  * @property string $apellEstudiante
+ * @property string $secApellEstudante
  * @property string $ciEstudiante
  * @property integer $idTutor
+ * @property integer $sexEstudiante
+ * @property string $nacEstudiante
+ * @property string $cursoEstudiante
+ * @property string $etapaEstudiante
+ * @property string $numCasaEstudiante
+ * @property string $pisoEstudiante
+ * @property string $provinciaEstudiante
+ * @property string $LocalidadEst
+ * @property string $calleEstudiante
+ * @property integer $codPostalEst
+ * @property string $paisEst
+ * @property integer $idCentroEst
+ * @property integer $telEstudiante
+ * @property string $emailEstudiante
+ * @property integer $nroCuentaEst
+ * @property string $dietaEstudiante
+ * @property string $nutricionEst
+ * @property integer $tel2Estudiante
+ * @property integer $menuEst
+ * @property integer $comidaEst
+ * @property integer $desayunoEst
+ * @property integer $becaEst
+ * @property double $descuentoEst
+ * @property string $diasEstudiante
  *
  * The followings are the available model relations:
+ * @property Asistencias[] $asistenciases
+ * @property Centros $idCentroEst0
  * @property Tutor $idTutor0
  */
 class Estudiante extends CActiveRecord
@@ -31,11 +58,14 @@ class Estudiante extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('idTutor', 'numerical', 'integerOnly'=>true),
-			array('nomEstudiante, apellEstudiante, ciEstudiante', 'length', 'max'=>50),
+			array('nomEstudiante, apellEstudiante, ciEstudiante, idTutor, paisEst', 'required'),
+			array('idTutor, sexEstudiante, codPostalEst, idCentroEst, telEstudiante, nroCuentaEst, tel2Estudiante, menuEst, comidaEst, desayunoEst, becaEst', 'numerical', 'integerOnly'=>true),
+			array('descuentoEst', 'numerical'),
+			array('nomEstudiante, apellEstudiante, secApellEstudante, ciEstudiante, cursoEstudiante, etapaEstudiante, numCasaEstudiante, pisoEstudiante, provinciaEstudiante, LocalidadEst, calleEstudiante, paisEst, emailEstudiante, dietaEstudiante, nutricionEst, diasEstudiante', 'length', 'max'=>50),
+			array('nacEstudiante', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idEstudiante, nomEstudiante, apellEstudiante, ciEstudiante, idTutor', 'safe', 'on'=>'search'),
+			array('idEstudiante, nomEstudiante, apellEstudiante, secApellEstudante, ciEstudiante, idTutor, sexEstudiante, nacEstudiante, cursoEstudiante, etapaEstudiante, numCasaEstudiante, pisoEstudiante, provinciaEstudiante, LocalidadEst, calleEstudiante, codPostalEst, paisEst, idCentroEst, telEstudiante, emailEstudiante, nroCuentaEst, dietaEstudiante, nutricionEst, tel2Estudiante, menuEst, comidaEst, desayunoEst, becaEst, descuentoEst, diasEstudiante', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -47,6 +77,8 @@ class Estudiante extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'asistenciases' => array(self::HAS_MANY, 'Asistencias', 'estudianteAsistencia'),
+			'idCentroEst0' => array(self::BELONGS_TO, 'Centros', 'idCentroEst'),
 			'idTutor0' => array(self::BELONGS_TO, 'Tutor', 'idTutor'),
 		);
 	}
@@ -57,11 +89,37 @@ class Estudiante extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'idEstudiante' => 'Id Estudiante',
-			'nomEstudiante' => 'Nombre',
-			'apellEstudiante' => 'Apell Estudiante',
-			'ciEstudiante' => 'Ci Estudiante',
-			'idTutor' => 'Id Tutor',
+            'idEstudiante' => 'Id Estudiante',
+            'nomEstudiante' => 'Nombre',
+            'apellEstudiante' => '1er Apellido',
+            'secApellEstudante' => '2do Apellido',
+            'ciEstudiante' => 'Nro ID Esc.',
+            'idTutor' => 'Tutor Pagador',
+            'sexEstudiante' => 'Sexo',
+            'nacEstudiante' => 'F. Nacimiento',
+            'cursoEstudiante' => 'Curso',
+            'numCasaEstudiante' => 'Num.',
+            'pisoEstudiante' => 'Piso',
+            'provinciaEstudiante' => 'Provincia',
+            'LocalidadEst' => 'Localidad',
+            'calleEstudiante' => 'Calle',
+            'codPostalEst' => 'Cod. Postal',
+            'paisEst' => 'Pais',
+            'idCentroEst' => 'Centro',
+            'telEstudiante' => 'Telefono',
+            'emailEstudiante' => 'Email',
+            'nroCuentaEst' => 'Nro Cuenta',
+            'dietaEstudiante' => 'Dieta',
+            'nutricionEst' => 'Datos Nutricionales',
+            'tel2Estudiante' => 'Telf. Alternativo',
+            'menuEst' => 'Dieta',
+            'comidaEst' => 'Comida Est',
+            'desayunoEst' => 'Desayuno Est',
+            'becaEst' => 'Beca',
+            'descuentoEst' => 'Descuento',
+            'diasEstudiante' => 'Dias Estudiante',
+			'etapaEstudiante' => 'Etapa Estudiante',
+
 		);
 	}
 
@@ -86,8 +144,33 @@ class Estudiante extends CActiveRecord
 		$criteria->compare('idEstudiante',$this->idEstudiante);
 		$criteria->compare('nomEstudiante',$this->nomEstudiante,true);
 		$criteria->compare('apellEstudiante',$this->apellEstudiante,true);
+		$criteria->compare('secApellEstudante',$this->secApellEstudante,true);
 		$criteria->compare('ciEstudiante',$this->ciEstudiante,true);
 		$criteria->compare('idTutor',$this->idTutor);
+		$criteria->compare('sexEstudiante',$this->sexEstudiante);
+		$criteria->compare('nacEstudiante',$this->nacEstudiante,true);
+		$criteria->compare('cursoEstudiante',$this->cursoEstudiante,true);
+		$criteria->compare('etapaEstudiante',$this->etapaEstudiante,true);
+		$criteria->compare('numCasaEstudiante',$this->numCasaEstudiante,true);
+		$criteria->compare('pisoEstudiante',$this->pisoEstudiante,true);
+		$criteria->compare('provinciaEstudiante',$this->provinciaEstudiante,true);
+		$criteria->compare('LocalidadEst',$this->LocalidadEst,true);
+		$criteria->compare('calleEstudiante',$this->calleEstudiante,true);
+		$criteria->compare('codPostalEst',$this->codPostalEst);
+		$criteria->compare('paisEst',$this->paisEst,true);
+		$criteria->compare('idCentroEst',$this->idCentroEst);
+		$criteria->compare('telEstudiante',$this->telEstudiante);
+		$criteria->compare('emailEstudiante',$this->emailEstudiante,true);
+		$criteria->compare('nroCuentaEst',$this->nroCuentaEst);
+		$criteria->compare('dietaEstudiante',$this->dietaEstudiante,true);
+		$criteria->compare('nutricionEst',$this->nutricionEst,true);
+		$criteria->compare('tel2Estudiante',$this->tel2Estudiante);
+		$criteria->compare('menuEst',$this->menuEst);
+		$criteria->compare('comidaEst',$this->comidaEst);
+		$criteria->compare('desayunoEst',$this->desayunoEst);
+		$criteria->compare('becaEst',$this->becaEst);
+		$criteria->compare('descuentoEst',$this->descuentoEst);
+		$criteria->compare('diasEstudiante',$this->diasEstudiante,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

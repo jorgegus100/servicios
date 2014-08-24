@@ -20,15 +20,39 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'colegio'); ?>
-		<?php echo $form->textField($model,'colegio',array('size'=>50,'maxlength'=>50)); ?>
-		<?php echo $form->error($model,'colegio'); ?>
+		<?php echo $form->labelEx($model,'colegioRecibo'); ?>
+		<?php echo $form->textField($model,'colegioRecibo',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->error($model,'colegioRecibo'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'alumno'); ?>
-		<?php echo $form->textField($model,'alumno'); ?>
-		<?php echo $form->error($model,'alumno'); ?>
+		<?php echo $form->labelEx($model,'alumnoRecibo'); ?>
+		<?php echo $form->textField($model,'alumnoRecibo'); ?>
+		<?php echo $form->error($model,'alumnoRecibo'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'fechEmisionRecibo'); ?>
+		<?php echo $form->textField($model,'fechEmisionRecibo'); ?>
+		<?php echo $form->error($model,'fechEmisionRecibo'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'estadoRecibo'); ?>
+		<?php echo $form->textField($model,'estadoRecibo',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->error($model,'estadoRecibo'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'conceptoRecibo'); ?>
+		<?php echo $form->textField($model,'conceptoRecibo',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->error($model,'conceptoRecibo'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'importeRecibo'); ?>
+		<?php echo $form->textField($model,'importeRecibo'); ?>
+		<?php echo $form->error($model,'importeRecibo'); ?>
 	</div>
 
 	<div class="row buttons">

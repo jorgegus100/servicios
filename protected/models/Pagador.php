@@ -53,7 +53,7 @@ class Pagador extends CActiveRecord
 		return array(
 			'idPagador' => 'Id Pagador',
 			'ciPagador' => 'Ci Pagador',
-			'nomPagador' => 'Nom Pagador',
+			'nomPagador' => 'Nombre',
 		);
 	}
 

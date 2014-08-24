@@ -30,7 +30,11 @@ class UserIdentity extends CUserIdentity
 			$this->errorCode=self::ERROR_NONE;
 			//$this->nivel=$users->nivel;
 			$this->setState('nivel',$users->nivel);
-			$this->setState('idUs',$users->idUsuario);
+                if($users->nivel==2)
+                    {$tutor=Tutor::model()->find("idUsuario=".$users->idUsuario."");
+                    $this->setState('idTut',$tutor->idTutor);
+                    }
+                $this->setState('id',$users->idUsuario);
 			}
 		return !$this->errorCode;
 	}

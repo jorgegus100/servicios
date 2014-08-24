@@ -3,16 +3,13 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Usuarioses',
+	'Usuarios',
 );
 
-$this->menu=array(
-	array('label'=>'Create Usuarios', 'url'=>array('create')),
-	array('label'=>'Manage Usuarios', 'url'=>array('admin')),
-);
+$this->menu=$this->menuUsuarios;
 ?>
 
-<h1>Usuarioses</h1>
+<h1>Usuarios</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

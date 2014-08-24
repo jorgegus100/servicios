@@ -7,12 +7,9 @@ $this->breadcrumbs=array(
 	'Create',
 );
 
-$this->menu=array(
-	array('label'=>'Lista Usuarios', 'url'=>array('index')),
-	array('label'=>'Administrar Usuarios', 'url'=>array('admin')),
-);
+$this->menu=$this->menuUsuarios;
 ?>
 
-<h1>Create Usuarios</h1>
+<h1>Crear Usuarios</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

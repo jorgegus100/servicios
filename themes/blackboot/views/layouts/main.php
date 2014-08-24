@@ -51,12 +51,20 @@
 						'htmlOptions' => array( 'class' => 'nav' ),
 						'activeCssClass'	=> 'active',
 						'items'=>array(
-							array('label'=>'Inicio', 'url'=>array('/site/index')),
-							array('label'=>'Usuarios', 'url'=>array('/usuarios/admin')),
-							array('label'=>'Estudiantes', 'url'=>array('/estudiante/admin', 'view'=>'about')),
-							array('label'=>'Tutores', 'url'=>array('/tutor/admin', 'view'=>'about')),
-							array('label'=>'Pagadores', 'url'=>array('/pagador/admin', 'view'=>'about')),
-							array('label'=>'Contactarse', 'url'=>array('/site/contact')),
+
+							array('label'=>'Usuarios', 'url'=>array('/usuarios/admin'), 'visible'=>Yii::app()->user->getState('nivel')==5),
+                            array('label'=>'Estudiantes', 'url'=>array('/estudiante/admin'), 'visible'=>Yii::app()->user->getState('nivel')==5),
+                            array('label'=>'Tutores', 'url'=>array('/tutor/admin'), 'visible'=>Yii::app()->user->getState('nivel')==5),
+                            array('label'=>'Pagadores', 'url'=>array('/pagador/admin')),
+							array('label'=>'Datos Generales', 'url'=>array('/tutor/view&id='.Yii::app()->user->getState('idTut').''), 'visible'=>Yii::app()->user->getState('nivel')==2),
+
+							array('label'=>'Asistencias', 'url'=>array('/tutor/view&id='.Yii::app()->user->getState('idTut').''), 'visible'=>Yii::app()->user->getState('nivel')==2),
+							array('label'=>'Facturacion', 'url'=>array('/tutor/view&id='.Yii::app()->user->getState('idTut').''), 'visible'=>Yii::app()->user->getState('nivel')==2),
+							array('label'=>'Incidencias', 'url'=>array('/tutor/view&id='.Yii::app()->user->getState('idTut').''), 'visible'=>Yii::app()->user->getState('nivel')==2),
+							array('label'=>'Menus', 'url'=>array('/tutor/view&id='.Yii::app()->user->getState('idTut').''), 'visible'=>Yii::app()->user->getState('nivel')==2),
+                            array('label'=>'Sugerencias', 'url'=>array('/site/contact'),'visible'=>Yii::app()->user->getState('nivel')==2 ),
+
+
 							array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 							array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 						),

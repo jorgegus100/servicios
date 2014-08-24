@@ -32,7 +32,7 @@ class TutorController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','admin','delete'),
+				'actions'=>array('create','update'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -63,6 +63,7 @@ class TutorController extends Controller
 	public function actionCreate()
 	{
 		$model=new Tutor;
+        $modelUs=new Usuarios;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -70,8 +71,18 @@ class TutorController extends Controller
 		if(isset($_POST['Tutor']))
 		{
 			$model->attributes=$_POST['Tutor'];
-			if($model->save())
+            $modelUs->apellUsuario=$_POST['Tutor']['apellTutor'];
+            $modelUs->apell2Usuario=$_POST['Tutor']['apell2Tutor'];
+            $modelUs->nomUsuario=$_POST['Tutor']['nomTutor'];
+            $modelUs->login=$_POST['Tutor']['emailTutor'];
+            $modelUs->password=sha1($_POST['Tutor']['dniTutor']);
+            $modelUs->nivel=2;
+            $modelUs->save();
+            $model->idUsuario=$modelUs->idUsuario;
+            if($model->save())
+                {
 				$this->redirect(array('view','id'=>$model->idTutor));
+                }
 		}
 
 		$this->render('create',array(
