@@ -35,6 +35,7 @@ class UserIdentity extends CUserIdentity
                     $this->setState('idTut',$tutor->idTutor);
                     }
                 $this->setState('id',$users->idUsuario);
+				$this->setState('isAdmin', ($this->name == 'admin'));
 			}
 		return !$this->errorCode;
 	}

@@ -37,6 +37,30 @@ class Controller extends CController
         array('label'=>'Administrar Recibos', 'url'=>array('recibos/admin')),
         array('label'=>'Crear Recibo', 'url'=>array('recibos/create')),
     );
+
+    public $datosGenerales=array(
+        array('label'=>'Datos Personales', 'url'=>array('recibos/admin')),
+        array('label'=>'Modificación Datos', 'url'=>array('recibos/create')),
+        array('label'=>'Becas', 'url'=>array('recibos/create')),
+        array('label'=>'Centros', 'url'=>array('recibos/create')),
+    );
+    public $menuAsistencias=array(
+        array('label'=>'Ausencias/Asistencias Adicionales', 'url'=>array('recibos/admin')),
+        array('label'=>'Servicios Contratados', 'url'=>array('recibos/create')),
+    );
+    public $menuFacturacion=array(
+        array('label'=>'Listado de Recibos', 'url'=>array('recibos/admin')),
+
+    );
+    public $menuIncidencias=array(
+        array('label'=>'Incidencias en el Servicio', 'url'=>array('recibos/admin')),
+    );
+    public $menuMenus=array(
+    array('label'=>'Ménus Mensuales', 'url'=>array('recibos/admin')),
+    );
+    public $menuSugerencias=array(
+        array('label'=>'Comunicación', 'url'=>array('recibos/admin')),
+    );
 	/**
 	 * @var array context menu items. This property will be assigned to {@link CMenu::items}.
 	 */

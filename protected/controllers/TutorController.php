@@ -51,8 +51,10 @@ class TutorController extends Controller
 	 */
 	public function actionView($id)
 	{
+        $listEstudiantes=Estudiante::model()->findAll("idTutor='".$id."'");
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
+            'listEstudiantes'=>$listEstudiantes,
 		));
 	}
 
