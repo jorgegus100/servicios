@@ -63,6 +63,7 @@ class EstudianteController extends Controller
 	public function actionCreate()
 	{
 		$model=new Estudiante;
+        $modelUs=new Usuarios;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -70,6 +71,14 @@ class EstudianteController extends Controller
 		if(isset($_POST['Estudiante']))
 		{
 			$model->attributes=$_POST['Estudiante'];
+            $modelUs->apellUsuario=$_POST['Estudiante']['apellEstudiante'];
+            $modelUs->apell2Usuario=$_POST['Estudiante']['secApellEstudante'];
+            $modelUs->nomUsuario=$_POST['Estudiante']['nomEstudiante'];
+            $modelUs->login=$_POST['Estudiante']['emailEstudiante'];
+            $modelUs->password=sha1($_POST['Estudiante']['ciEstudiante']);
+            $modelUs->nivel=1;
+            $modelUs->save();
+            $model->idUsuario=$modelUs->idUsuario;
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->idEstudiante));
 		}

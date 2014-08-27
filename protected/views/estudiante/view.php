@@ -16,12 +16,12 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Estudiante #<?php echo $model->idEstudiante; ?></h1>
+<h1>Datos Estudiante <?php echo $model->nomEstudiante.' '.$model->apellEstudiante.' '.$model->secApellEstudante; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'idEstudiante',
+
 		'nomEstudiante',
 		'apellEstudiante',
 		'secApellEstudante',

@@ -55,7 +55,7 @@
 							array('label'=>'Usuarios', 'url'=>array('/usuarios/admin'), 'visible'=>Yii::app()->user->getState('nivel')==5),
                             array('label'=>'Estudiantes', 'url'=>array('/estudiante/admin'), 'visible'=>Yii::app()->user->getState('nivel')==5),
                             array('label'=>'Tutores', 'url'=>array('/tutor/admin'), 'visible'=>Yii::app()->user->getState('nivel')==5),
-                            array('label'=>'Pagadores', 'url'=>array('/pagador/admin')),
+                            array('label'=>'Pagadores', 'url'=>array('/pagador/admin'), 'visible'=>Yii::app()->user->getState('nivel')==5),
 							array('label'=>'Datos Generales', 'url'=>array('/tutor/view&id='.Yii::app()->user->getState('idTut').''), 'visible'=>Yii::app()->user->getState('nivel')==2),
 
 							array('label'=>'Asistencias', 'url'=>array('/tutor/view&id='.Yii::app()->user->getState('idTut').''), 'visible'=>Yii::app()->user->getState('nivel')==2),

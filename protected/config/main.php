@@ -23,6 +23,9 @@ return array(
 	),
 
 	'modules'=>array(
+		 'forum'=>array(
+        'class'=>'application.modules.yii-forum.YiiForumModule',
+		),
 		// uncomment the following to enable the Gii tool
 
 		'gii'=>array(

@@ -545,3 +545,34 @@ p.hint { float:left; display:block;}
 }
 
 .col-md-3 { float: left; }
+
+/*Jorge*/
+.lbTable{
+    width: 8%;
+    font-style: italic;
+}
+.contTab{
+    width: 8%;
+
+}
+.grRemark{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.grRemark th{
+    color: beige;
+    background-color: coral;
+    border: solid 1px;
+
+}
+.grRemark td{
+
+    background-color:#fbb450;
+    border: solid 1px;
+
+}
+
+.titInfo{
+    font-size: 20px;
+    margin-bottom: 30px !important;
+}
