@@ -553,6 +553,7 @@ p.hint { float:left; display:block;}
 }
 .contTab{
     width: 8%;
+    color: #417080;
 
 }
 .grRemark{
@@ -563,6 +564,7 @@ p.hint { float:left; display:block;}
     color: beige;
     background-color: coral;
     border: solid 1px;
+    margin-bottom: 10px;
 
 }
 .grRemark td{

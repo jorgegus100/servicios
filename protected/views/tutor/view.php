@@ -12,7 +12,7 @@ $this->menu=$this->datosGenerales;
 
 <h1>Consulta de datos personales</h1>
 <span class="titInfo">Alumnos</span>
-
+<?php foreach($listEstudiantes as $n=>$model1): ?>
 <table class="items grRemark">
 
     <tr>
@@ -23,7 +23,7 @@ $this->menu=$this->datosGenerales;
         <th><?php echo 'Etapa'; ?></th>
         <th><?php echo 'Curso'; ?></th>
     </tr>
-    <?php foreach($listEstudiantes as $n=>$model1): ?>
+
         <tr class="<?php echo $n%2?'evenMod':'oddMod';?>">
 
             <td><?php echo CHtml::encode($model1->ciEstudiante); ?></td>
@@ -37,15 +37,15 @@ $this->menu=$this->datosGenerales;
      <?php $centro=Centros::model()->find("idCentro='".$model1->idCentroEst."'");?>
     <span class="titInfo">Centro</span>
     <table>
-
     <tr class="lbCentre">
             <td class="lbTable">C. autonoma</td><td class="contTab"><?php echo $centro->provCentro; ?></td>
             <td class="lbTable">Provincia</td><td class="contTab"><?php echo $centro->provCentro; ?></td>
             <td class="lbTable">Colegio</td><td class="contTab"><?php echo $centro->nomCentro; ?></td>
         </tr>
     </table>
+    <br>
     <?php endforeach; ?>
-
+<br>
 
 
 
@@ -71,6 +71,27 @@ $this->menu=$this->datosGenerales;
         <td class="lbTable" colspan="2"><?php echo 'Rel. Alumno'; ?></td><td class="contTab" colspan="2"><?php echo $model->relAlumTutor; ?></td> <td class="lbTable"><?php echo 'Email'; ?></td><td class="contTab" colspan="2"><?php echo $model->emailTutor; ?></td>
     </tr>
 </table>
+<?php foreach($listEstudiantes as $n=>$model2): ?>
+<span class="titInfo">Estudiante</span>
+<table>
 
+    <tr><td class="lbTable"><?php echo 'Nro ID Esc..'; ?></td><td class="contTab"><?php echo $model2->ciEstudiante; ?></td><td class="lbTable"><?php echo 'Sexo.'; ?></td><td class="contTab"><?php echo $model2->sexEstudiante; ?></td>
+        <td class="lbTable"><?php echo 'Calle'; ?></td><td class="contTab"><?php echo $model2->calleEstudiante; ?></td><td class="lbTable"><?php echo 'Nro'; ?></td><td class="contTab"><?php echo $model2->numCasaEstudiante; ?></td>
+        <td class="lbTable"><?php echo 'Piso'; ?></td><td class="contTab"><?php echo $model2->pisoEstudiante; ?></td>
+    </tr>
+    <tr>
+        <td class="lbTable" colspan="2"><?php echo 'Nombre'; ?></td><td class="contTab" colspan="2"><?php echo $model2->nomEstudiante; ?></td> <td class="lbTable"><?php echo 'Provincia'; ?></td><td class="contTab" colspan="3"><?php echo $model2->provinciaEstudiante; ?></td>
+    </tr>
+    <tr>
+        <td class="lbTable" colspan="2"><?php echo '1er Apellido'; ?></td><td class="contTab" colspan="2"><?php echo $model2->apellEstudiante; ?></td> <td class="lbTable"><?php echo 'Localidad'; ?></td><td class="contTab" colspan="2"><?php echo $model2->LocalidadEst; ?></td>
+        <td class="lbTable" colspan="2"><?php echo 'Cod. Postal'; ?></td><td class="contTab"><?php echo $model2->codPostalEst; ?>
+    </tr>
+    <tr>
+        <td class="lbTable" colspan="2"><?php echo '2do Apellido'; ?></td><td class="contTab" colspan="2"><?php echo $model2->secApellEstudante; ?></td> <td class="lbTable"><?php echo 'Teléfono'; ?></td><td class="contTab"><?php echo $model2->telEstudiante; ?></td><td class="lbTable" colspan="2"><?php echo 'Telf. Alternativo'; ?></td><td class="contTab"><?php echo $model2->tel2Estudiante; ?></td>
 
-
+    </tr>
+    <tr>
+        <td class="lbTable" colspan="2"><?php echo 'Fec.Nacimiento'; ?></td><td class="contTab" colspan="2"><?php echo $model2->nacEstudiante; ?></td> <td class="lbTable"><?php echo 'Email'; ?></td><td class="contTab" colspan="2"><?php echo $model2->emailEstudiante; ?></td>
+    </tr>
+</table>
+<?php endforeach; ?>

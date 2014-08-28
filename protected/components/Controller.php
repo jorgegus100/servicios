@@ -5,6 +5,13 @@
  */
 class Controller extends CController
 {
+   function  init(){
+        $this->datosGenerales=array(
+            array('label'=>'Datos Personales', 'url'=>array('tutor/view&id='.Yii::app()->user->getState('idTut').'')),
+            array('label'=>'Modificación Datos', 'url'=>array('recibos/create')),
+            array('label'=>'Becas', 'url'=>array('recibos/create')),
+            array('label'=>'Centros', 'url'=>array('recibos/create')),);
+    }
 	/**
 	 * @var string the default layout for the controller view. Defaults to '//layouts/column1',
 	 * meaning using a single column layout. See 'protected/views/layouts/column1.php'.
@@ -37,13 +44,8 @@ class Controller extends CController
         array('label'=>'Administrar Recibos', 'url'=>array('recibos/admin')),
         array('label'=>'Crear Recibo', 'url'=>array('recibos/create')),
     );
-
-    public $datosGenerales=array(
-        array('label'=>'Datos Personales', 'url'=>array('recibos/admin')),
-        array('label'=>'Modificación Datos', 'url'=>array('recibos/create')),
-        array('label'=>'Becas', 'url'=>array('recibos/create')),
-        array('label'=>'Centros', 'url'=>array('recibos/create')),
-    );
+    //public $i=Yii::app()->user->getState('idTut');
+    public $datosGenerales=array();
     public $menuAsistencias=array(
         array('label'=>'Ausencias/Asistencias Adicionales', 'url'=>array('recibos/admin')),
         array('label'=>'Servicios Contratados', 'url'=>array('recibos/create')),
@@ -71,4 +73,6 @@ class Controller extends CController
 	 * for more details on how to specify this property.
 	 */
 	public $breadcrumbs=array();
+
+
 }
