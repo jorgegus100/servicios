@@ -26,25 +26,25 @@
       <file leaf-file-name="TutorController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/TutorController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="35" selection-start="1462" selection-end="1462" vertical-scroll-proportion="12.064516" vertical-offset="1562" max-vertical-offset="4224">
+            <state line="54" column="35" selection-start="1462" selection-end="1462" vertical-scroll-proportion="0.0" vertical-offset="1562" max-vertical-offset="4224">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="view.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/tutor/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="8" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.92413795" vertical-offset="454" max-vertical-offset="2266">
+            <state line="110" column="5" selection-start="4701" selection-end="4701" vertical-scroll-proportion="3.6774194" vertical-offset="2534" max-vertical-offset="3102">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/blackboot/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="566" column="23" selection-start="11359" selection-end="11359" vertical-scroll-proportion="0.0" vertical-offset="12078" max-vertical-offset="12870">
+            <state line="614" column="16" selection-start="12300" selection-end="12300" vertical-scroll-proportion="0.7312391" vertical-offset="13089" max-vertical-offset="13662">
               <folding />
             </state>
           </provider>
@@ -53,7 +53,7 @@
       <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/blackboot/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="83" selection-start="4186" selection-end="4221" vertical-scroll-proportion="-13.774194" vertical-offset="959" max-vertical-offset="2640">
+            <state line="63" column="83" selection-start="4186" selection-end="4221" vertical-scroll-proportion="0.0" vertical-offset="959" max-vertical-offset="2640">
               <folding />
             </state>
           </provider>
@@ -62,7 +62,7 @@
       <file leaf-file-name="Controller.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/components/Controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="112" selection-start="361" selection-end="361" vertical-scroll-proportion="-6.387097" vertical-offset="0" max-vertical-offset="1826">
+            <state line="16" column="87" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0" vertical-offset="352" max-vertical-offset="1826">
               <folding />
             </state>
           </provider>
@@ -102,7 +102,7 @@
       <file leaf-file-name="Tutor.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/models/Tutor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="24" selection-start="993" selection-end="993" vertical-scroll-proportion="-0.0" vertical-offset="858" max-vertical-offset="3388">
+            <state line="39" column="24" selection-start="993" selection-end="993" vertical-scroll-proportion="0.0" vertical-offset="858" max-vertical-offset="3388">
               <folding />
             </state>
           </provider>
@@ -146,8 +146,8 @@
         <option value="$PROJECT_DIR$/protected/views/estudiante/view.php" />
         <option value="$PROJECT_DIR$/protected/controllers/TutorController.php" />
         <option value="$PROJECT_DIR$/protected/components/Controller.php" />
-        <option value="$PROJECT_DIR$/themes/blackboot/css/style.css" />
         <option value="$PROJECT_DIR$/protected/views/tutor/view.php" />
+        <option value="$PROJECT_DIR$/themes/blackboot/css/style.css" />
       </list>
     </option>
   </component>
@@ -158,9 +158,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
-    <option name="width" value="1260" />
-    <option name="height" value="756" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -261,6 +262,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="blackboot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servicios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servicios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blackboot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -434,7 +457,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="0" width="1260" height="756" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -443,7 +466,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19051448" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19033675" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -451,11 +474,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -502,9 +525,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/EstudianteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="52" selection-start="963" selection-end="963" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="3938">
-          <folding />
-        </state>
+        <state line="34" column="52" selection-start="963" selection-end="963" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="3938" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/PagadorController.php">
@@ -681,9 +702,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/EstudianteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="9" selection-start="2406" selection-end="2406" vertical-scroll-proportion="0.0" vertical-offset="1826" max-vertical-offset="4136">
-          <folding />
-        </state>
+        <state line="83" column="9" selection-start="2406" selection-end="2406" vertical-scroll-proportion="0.0" vertical-offset="1826" max-vertical-offset="4136" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/Usuarios.php">
@@ -713,30 +732,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/TutorController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="35" selection-start="1462" selection-end="1462" vertical-scroll-proportion="12.064516" vertical-offset="1562" max-vertical-offset="4224">
+        <state line="54" column="35" selection-start="1462" selection-end="1462" vertical-scroll-proportion="0.0" vertical-offset="1562" max-vertical-offset="4224">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="112" selection-start="361" selection-end="361" vertical-scroll-proportion="-6.387097" vertical-offset="0" max-vertical-offset="1826">
+        <state line="16" column="87" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0" vertical-offset="352" max-vertical-offset="1826">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/blackboot/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="83" selection-start="4186" selection-end="4221" vertical-scroll-proportion="-13.774194" vertical-offset="959" max-vertical-offset="2640">
+        <state line="63" column="83" selection-start="4186" selection-end="4221" vertical-scroll-proportion="0.0" vertical-offset="959" max-vertical-offset="2640">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/estudiante/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="18" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1342">
-          <folding />
-        </state>
+        <state line="9" column="18" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1342" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/Tutor.php">
@@ -746,16 +763,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/blackboot/css/style.css">
+    <entry file="file://$PROJECT_DIR$/protected/views/tutor/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="566" column="23" selection-start="11359" selection-end="11359" vertical-scroll-proportion="0.0" vertical-offset="12078" max-vertical-offset="12870">
+        <state line="110" column="5" selection-start="4701" selection-end="4701" vertical-scroll-proportion="3.6774194" vertical-offset="2534" max-vertical-offset="3102">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/tutor/view.php">
+    <entry file="file://$PROJECT_DIR$/themes/blackboot/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="8" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.92413795" vertical-offset="454" max-vertical-offset="2266">
+        <state line="614" column="16" selection-start="12300" selection-end="12300" vertical-scroll-proportion="0.7312391" vertical-offset="13089" max-vertical-offset="13662">
           <folding />
         </state>
       </provider>

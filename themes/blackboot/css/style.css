@@ -48,7 +48,7 @@ p, div {
 
 div.portlet-decoration {
 color: #fff;
-background-color: #000;
+background-color:#FBB450;
 padding: 10px 15px;
 border-bottom: 1px solid transparent;
 border-top-right-radius: 3px;
@@ -559,6 +559,7 @@ p.hint { float:left; display:block;}
 .grRemark{
     width: 100%;
     margin-bottom: 30px;
+
 }
 .grRemark th{
     color: beige;
@@ -570,11 +571,46 @@ p.hint { float:left; display:block;}
 .grRemark td{
 
     background-color:#fbb450;
-    border: solid 1px;
+    border: solid 1px beige;
 
 }
 
 .titInfo{
     font-size: 20px;
     margin-bottom: 30px !important;
+    background: url("../img/icono_cerrado.png") no-repeat scroll 15px 11px #EAEAEA;
+    border-bottom: 2px solid #FBB450;
+    color: #282828;
+    display: block;
+    font: bold 10px Verdana;
+    overflow: auto;
+    padding-top: 10px;
+
+    padding-bottom: 10px;
+    text-decoration: none;
+    width: 100%;
+
+}
+.rowCat {
+    display: none;
+    padding: 20px;
+    font-family: sans-serif;
+}
+.tbBase{
+    margin-bottom: 30px !important;
+}
+
+a.CategName {
+    background: url("../img/icono_cerrado.png") no-repeat scroll 15px 11px #FCDEDB;
+    border-bottom: 2px solid #FBB450;
+    color: #282828;
+    display: block;
+    font: bold 10px Verdana;
+    overflow: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px !important;
+
+    text-decoration: none;
+    width: auto;
 }

@@ -1,6 +1,8 @@
 <?php
 /* @var $this TutorController */
 /* @var $model Tutor */
+/* @var $form CActiveForm */
+Yii::app()->clientScript->registerCoreScript('jquery');
 
 $this->breadcrumbs=array(
 	'Tutors'=>array('index'),
@@ -9,6 +11,39 @@ $this->breadcrumbs=array(
 
 $this->menu=$this->datosGenerales;
 ?>
+<script>
+    //alert("hola");
+    jQuery(function($)
+    {
+        $( ".CategName" ).click(function(e) {
+            e.preventDefault();
+            var id=$(this).attr("for");
+            var al='"#'+id+'"';
+            //ert(al);
+            $('#'+id+'').toggle();
+            //$(this).toggle();
+            //$(this).removeClass("CategName");
+        });
+        /*
+        $('#selAnalisis').click(function(e) {
+            e.preventDefault();
+            var drName=$('#drName').text();
+            if(drName+""=="No Asignado")
+                alert('asignar medico');
+            else
+                $('#analisis-selecAnalisis-form').submit();
+        });
+
+        $('#formulario_nuevo_boton').click(function(e){
+         e.preventDefault();
+         $('#formulario_nuevo').css('display','block');
+         });*/
+
+    });
+</script>
+
+
+
 
 <h1>Consulta de datos personales</h1>
 <span class="titInfo">Alumnos</span>
@@ -50,7 +85,7 @@ $this->menu=$this->datosGenerales;
 
 
 <span class="titInfo">Tutor</span>
-<table>
+<table class="tbBase">
 
     <tr><td class="lbTable"><?php echo 'D.N.I.'; ?></td><td class="contTab"><?php echo $model->dniTutor; ?></td><td class="lbTable"><?php echo 'Sexo.'; ?></td><td class="contTab"><?php echo $model->sexoTutor; ?></td>
         <td class="lbTable"><?php echo 'Calle'; ?></td><td class="contTab"><?php echo $model->calleTutor; ?></td><td class="lbTable"><?php echo 'Nro'; ?></td><td class="contTab"><?php echo $model->numCasaTutor; ?></td>
@@ -71,9 +106,11 @@ $this->menu=$this->datosGenerales;
         <td class="lbTable" colspan="2"><?php echo 'Rel. Alumno'; ?></td><td class="contTab" colspan="2"><?php echo $model->relAlumTutor; ?></td> <td class="lbTable"><?php echo 'Email'; ?></td><td class="contTab" colspan="2"><?php echo $model->emailTutor; ?></td>
     </tr>
 </table>
+
 <?php foreach($listEstudiantes as $n=>$model2): ?>
-<span class="titInfo">Estudiante</span>
-<table>
+<span><a class="CategName" for="<?php echo $model2->ciEstudiante; ?>" href="">Estudiante <?php echo $model2->nomEstudiante.' '.$model2->apellEstudiante; ?></a></span>
+<div class='row rowCat' id="<?php echo $model2->ciEstudiante; ?>" >
+<table class="tbBase">
 
     <tr><td class="lbTable"><?php echo 'Nro ID Esc..'; ?></td><td class="contTab"><?php echo $model2->ciEstudiante; ?></td><td class="lbTable"><?php echo 'Sexo.'; ?></td><td class="contTab"><?php echo $model2->sexEstudiante; ?></td>
         <td class="lbTable"><?php echo 'Calle'; ?></td><td class="contTab"><?php echo $model2->calleEstudiante; ?></td><td class="lbTable"><?php echo 'Nro'; ?></td><td class="contTab"><?php echo $model2->numCasaEstudiante; ?></td>
@@ -94,4 +131,5 @@ $this->menu=$this->datosGenerales;
         <td class="lbTable" colspan="2"><?php echo 'Fec.Nacimiento'; ?></td><td class="contTab" colspan="2"><?php echo $model2->nacEstudiante; ?></td> <td class="lbTable"><?php echo 'Email'; ?></td><td class="contTab" colspan="2"><?php echo $model2->emailEstudiante; ?></td>
     </tr>
 </table>
+</div>
 <?php endforeach; ?>
