@@ -23,10 +23,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TutorController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/TutorController.php">
+      <file leaf-file-name="SiteController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="35" selection-start="1462" selection-end="1462" vertical-scroll-proportion="0.0" vertical-offset="1562" max-vertical-offset="4224">
+            <state line="43" column="0" selection-start="1041" selection-end="1041" vertical-scroll-proportion="-16.612904" vertical-offset="431" max-vertical-offset="2508">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecibosController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/RecibosController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="14" selection-start="1050" selection-end="1050" vertical-scroll-proportion="-10.935484" vertical-offset="453" max-vertical-offset="3938">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/MenuController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="14" selection-start="1206" selection-end="1206" vertical-scroll-proportion="-10.645162" vertical-offset="550" max-vertical-offset="3938">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/blackboot/views/layouts/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="83" selection-start="4186" selection-end="4221" vertical-scroll-proportion="0.6404293" vertical-offset="1028" max-vertical-offset="2640">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CentrosController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/CentrosController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="14" selection-start="1050" selection-end="1050" vertical-scroll-proportion="-7.806452" vertical-offset="550" max-vertical-offset="3938">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CalendarioController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/CalendarioController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="14" selection-start="1053" selection-end="1053" vertical-scroll-proportion="-13.064516" vertical-offset="387" max-vertical-offset="3938">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BecasController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/BecasController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="14" selection-start="1048" selection-end="1048" vertical-scroll-proportion="-7.806452" vertical-offset="550" max-vertical-offset="3938">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AsistenciasController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/AsistenciasController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="14" selection-start="1054" selection-end="1054" vertical-scroll-proportion="-7.806452" vertical-offset="550" max-vertical-offset="3938">
               <folding />
             </state>
           </provider>
@@ -35,74 +98,16 @@
       <file leaf-file-name="view.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/tutor/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="5" selection-start="4701" selection-end="4701" vertical-scroll-proportion="3.6774194" vertical-offset="2534" max-vertical-offset="3102">
+            <state line="135" column="0" selection-start="7017" selection-end="7017" vertical-scroll-proportion="0.0" vertical-offset="2970" max-vertical-offset="3102">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/blackboot/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="614" column="16" selection-start="12300" selection-end="12300" vertical-scroll-proportion="0.7312391" vertical-offset="13089" max-vertical-offset="13662">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/blackboot/views/layouts/main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="83" selection-start="4186" selection-end="4221" vertical-scroll-proportion="0.0" vertical-offset="959" max-vertical-offset="2640">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/components/Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="87" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0" vertical-offset="352" max-vertical-offset="1826">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/tutor/admin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1716">
-              <folding>
-                <marker date="1408834120000" expanded="true" signature="575:804" placeholder="..." />
-                <marker date="1408834120000" expanded="false" signature="921:933" placeholder="..." />
-                <marker date="1408834120000" expanded="true" signature="934:1010" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/tutor/create.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="506">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Usuarios.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/models/Usuarios.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="37" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.0" vertical-offset="1320" max-vertical-offset="2464">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tutor.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/models/Tutor.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="24" selection-start="993" selection-end="993" vertical-scroll-proportion="0.0" vertical-offset="858" max-vertical-offset="3388">
+            <state line="615" column="1" selection-start="12302" selection-end="12302" vertical-scroll-proportion="0.0" vertical-offset="13051" max-vertical-offset="13662">
               <folding />
             </state>
           </provider>
@@ -119,7 +124,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/protected/config/main.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/PagadorController.php" />
         <option value="$PROJECT_DIR$/protected/models/Asistencias.php" />
         <option value="$PROJECT_DIR$/protected/models/Becas.php" />
         <option value="$PROJECT_DIR$/protected/models/Calendario.php" />
@@ -137,17 +141,24 @@
         <option value="$PROJECT_DIR$/protected/views/site/pages/about.php" />
         <option value="$PROJECT_DIR$/protected/views/layouts/column2.php" />
         <option value="$PROJECT_DIR$/themes/blackboot/views/layouts/column2.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/UsuariosController.php" />
         <option value="$PROJECT_DIR$/protected/models/Tutor.php" />
         <option value="$PROJECT_DIR$/protected/components/UserIdentity.php" />
         <option value="$PROJECT_DIR$/themes/blackboot/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/themes/blackboot/views/layouts/main.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/EstudianteController.php" />
         <option value="$PROJECT_DIR$/protected/views/estudiante/view.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/TutorController.php" />
         <option value="$PROJECT_DIR$/protected/components/Controller.php" />
         <option value="$PROJECT_DIR$/protected/views/tutor/view.php" />
         <option value="$PROJECT_DIR$/themes/blackboot/css/style.css" />
+        <option value="$PROJECT_DIR$/protected/controllers/UsuariosController.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/TutorController.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/RecibosController.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/PagadorController.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/MenuController.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/EstudianteController.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/CentrosController.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/CalendarioController.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/BecasController.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/AsistenciasController.php" />
       </list>
     </option>
   </component>
@@ -158,10 +169,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="10" />
+    <option name="width" value="1260" />
+    <option name="height" value="756" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -189,6 +199,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -419,7 +430,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -457,7 +467,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="10" y="0" width="1260" height="756" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -466,7 +476,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19033675" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18971062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -498,36 +508,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/blackboot/views/layouts/column2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="37" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0" vertical-offset="110" max-vertical-offset="616" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/blackboot/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="471" column="11" selection-start="6455" selection-end="6455" vertical-scroll-proportion="0.0" vertical-offset="10141" max-vertical-offset="133034" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="4" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0" vertical-offset="308" max-vertical-offset="2178" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/blackboot/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="29" selection-start="4336" selection-end="4336" vertical-scroll-proportion="0.0" vertical-offset="2046" max-vertical-offset="2464" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/usuarios/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="26" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="506" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/EstudianteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="52" selection-start="963" selection-end="963" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="3938" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/PagadorController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="52" selection-start="960" selection-end="960" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="3938" />
@@ -548,11 +528,6 @@
     <entry file="file://$PROJECT_DIR$/themes/blackboot/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4557" column="17" selection-start="86364" selection-end="86364" vertical-scroll-proportion="0.0" vertical-offset="100254" max-vertical-offset="133034" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/PagadorController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="52" selection-start="960" selection-end="960" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="3938" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/config/main.php">
@@ -635,16 +610,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/UsuariosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="30" selection-start="1884" selection-end="1884" vertical-scroll-proportion="-9.935484" vertical-offset="1298" max-vertical-offset="3960" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.585009" vertical-offset="1961" max-vertical-offset="2508" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/Estudiante.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="119" column="50" selection-start="4803" selection-end="4803" vertical-scroll-proportion="2.6087751" vertical-offset="1191" max-vertical-offset="4312" />
@@ -700,11 +665,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2530" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/EstudianteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="9" selection-start="2406" selection-end="2406" vertical-scroll-proportion="0.0" vertical-offset="1826" max-vertical-offset="4136" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/Usuarios.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="37" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="2464">
@@ -716,9 +676,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1716">
           <folding>
-            <marker date="1408834120000" expanded="true" signature="575:804" placeholder="..." />
-            <marker date="1408834120000" expanded="false" signature="921:933" placeholder="..." />
-            <marker date="1408834120000" expanded="true" signature="934:1010" placeholder="..." />
+            <marker date="1408834120000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1408834120000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1408834120000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -730,23 +690,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/TutorController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="35" selection-start="1462" selection-end="1462" vertical-scroll-proportion="0.0" vertical-offset="1562" max-vertical-offset="4224">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="87" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0" vertical-offset="352" max-vertical-offset="1826">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/blackboot/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="83" selection-start="4186" selection-end="4221" vertical-scroll-proportion="0.0" vertical-offset="959" max-vertical-offset="2640">
           <folding />
         </state>
       </provider>
@@ -765,14 +711,98 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/tutor/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="5" selection-start="4701" selection-end="4701" vertical-scroll-proportion="3.6774194" vertical-offset="2534" max-vertical-offset="3102">
+        <state line="135" column="0" selection-start="7017" selection-end="7017" vertical-scroll-proportion="0.0" vertical-offset="2970" max-vertical-offset="3102">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/blackboot/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="614" column="16" selection-start="12300" selection-end="12300" vertical-scroll-proportion="0.7312391" vertical-offset="13089" max-vertical-offset="13662">
+        <state line="615" column="1" selection-start="12302" selection-end="12302" vertical-scroll-proportion="0.0" vertical-offset="13051" max-vertical-offset="13662">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/UsuariosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="14" selection-start="837" selection-end="1009" vertical-scroll-proportion="-10.935484" vertical-offset="453" max-vertical-offset="3960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/TutorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="14" selection-start="1048" selection-end="1048" vertical-scroll-proportion="-14.4838705" vertical-offset="343" max-vertical-offset="4224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="1041" selection-end="1041" vertical-scroll-proportion="-16.612904" vertical-offset="431" max-vertical-offset="2508">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/RecibosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="14" selection-start="1050" selection-end="1050" vertical-scroll-proportion="-10.935484" vertical-offset="453" max-vertical-offset="3938">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/PagadorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="14" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.47227192" vertical-offset="528" max-vertical-offset="3938">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/MenuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="14" selection-start="1206" selection-end="1206" vertical-scroll-proportion="-10.645162" vertical-offset="550" max-vertical-offset="3938">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/EstudianteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="14" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.80322003" vertical-offset="343" max-vertical-offset="4136">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/CentrosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="14" selection-start="1050" selection-end="1050" vertical-scroll-proportion="-7.806452" vertical-offset="550" max-vertical-offset="3938">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/CalendarioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="14" selection-start="1053" selection-end="1053" vertical-scroll-proportion="-13.064516" vertical-offset="387" max-vertical-offset="3938">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/BecasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="14" selection-start="1048" selection-end="1048" vertical-scroll-proportion="-7.806452" vertical-offset="550" max-vertical-offset="3938">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/AsistenciasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="14" selection-start="1054" selection-end="1054" vertical-scroll-proportion="-7.806452" vertical-offset="550" max-vertical-offset="3938">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/blackboot/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="83" selection-start="4186" selection-end="4221" vertical-scroll-proportion="0.6404293" vertical-offset="1028" max-vertical-offset="2640">
           <folding />
         </state>
       </provider>
