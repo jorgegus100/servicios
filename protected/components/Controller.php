@@ -29,6 +29,8 @@ class Controller extends CController
         array('label'=>'Crear Tutor', 'url'=>array('tutor/create')),
 
     );
+
+
     public $menuCentros=array(
         array('label'=>'Administrar Centros', 'url'=>array('centros/admin')),
         array('label'=>'Crear Centros', 'url'=>array('centros/create')),

@@ -7,10 +7,7 @@ $this->breadcrumbs=array(
 	'Manage',
 );
 
-$this->menu=array(
-	array('label'=>'List Estudiante', 'url'=>array('index')),
-	array('label'=>'Create Estudiante', 'url'=>array('create')),
-);
+$this->menu=$this->menuEstudiantes;
 
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){

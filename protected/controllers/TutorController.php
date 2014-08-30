@@ -32,7 +32,7 @@ class TutorController extends Controller
 				'users'=>array('*'),
 			),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions'=>array('create','update','admin','delete'),
+                'actions'=>array('create','update','admin','delete','asignarEst'),
                 'users'=>array('@'),
             ),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -83,7 +83,7 @@ class TutorController extends Controller
             $model->idUsuario=$modelUs->idUsuario;
             if($model->save())
                 {
-				$this->redirect(array('view','id'=>$model->idTutor));
+				$this->redirect(array('asignarEst','id'=>$model->idTutor));
                 }
 		}
 
@@ -108,14 +108,15 @@ class TutorController extends Controller
 		{
 			$model->attributes=$_POST['Tutor'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->idTutor));
-		}
-
+            {
+                $this->redirect(array('asignarEst','id'=>$model->idTutor));
+		    }
+        }
 		$this->render('update',array(
 			'model'=>$model,
 		));
-	}
 
+    }
 	/**
 	 * Deletes a particular model.
 	 * If deletion is successful, the browser will be redirected to the 'admin' page.
@@ -183,4 +184,18 @@ class TutorController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+    public function actionAsignarEst($id)
+    {
+        $listEstudiantes=Estudiante::model()->findAll("idTutor='".$id."'");
+        $modelNewEst=new Estudiante();
+        $modelESearch=new Estudiante('search');
+        $this->render('asignarEst',array(
+            'model'=>$this->loadModel($id),
+            'listEstudiantes'=>$listEstudiantes,
+            'modelNewEst'=>$modelNewEst,
+            'modelESearch'=>$modelESearch,
+        ));
+    }
+
 }

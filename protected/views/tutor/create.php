@@ -7,12 +7,9 @@ $this->breadcrumbs=array(
 	'Create',
 );
 
-$this->menu=array(
-	array('label'=>'List Tutor', 'url'=>array('index')),
-	array('label'=>'Manage Tutor', 'url'=>array('admin')),
-);
+$this->menu=$this->menuEstudiantes;
 ?>
 
-<h1>Create Tutor</h1>
+<h1>Crear Tutor</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
