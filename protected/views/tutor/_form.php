@@ -108,11 +108,11 @@
             <?php echo $form->labelEx($model,'telf2Tutor'); ?>
             <?php echo $form->textField($model,'telf2Tutor',array('class'=>'span12')); ?>
             <?php echo $form->error($model,'telf2Tutor',array('class'=>'span12')); ?>
+
+            <div class="row-fluid">
+                <div class="span3">
         </div>
     </div>
-
-   <div class="row-fluid">
-    <div class="span3">
         <?php echo $form->labelEx($model,'principalTutor'); ?>
         <?php echo CHtml::checkBox('Tutor[principalTutor]',false,array("class"=>"span12","value"=>'1')); ?>
 
