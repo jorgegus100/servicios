@@ -32,7 +32,7 @@ class EstudianteController extends Controller
 				'users'=>array('*'),
 			),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions'=>array('create','update','admin','delete'),
+                'actions'=>array('create','update','admin','delete','create2'),
                 'users'=>array('@'),
             ),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -87,7 +87,12 @@ class EstudianteController extends Controller
 			'model'=>$model,
 		));
 	}
+    public function actionCreate2()
+    {
 
+
+        $this->render('create2');
+    }
 	/**
 	 * Updates a particular model.
 	 * If update is successful, the browser will be redirected to the 'view' page.
@@ -96,19 +101,34 @@ class EstudianteController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
+        $modelCSearch=new Centros('search');
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Estudiante']))
-		{
-			$model->attributes=$_POST['Estudiante'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->idEstudiante));
-		}
+
+        if(isset($_GET['idCentro']))
+        {
+
+            $idCentro=$_GET['idCentro'];
+            $centro=Centros::model()->findByPk($idCentro);
+            $nombreCentro=$centro->nomCentro;
+        }
+        else
+        {
+            $nombreCentro="No Asignado";
+        }
+        if(isset($_POST['Estudiante']))
+        {
+            $model->attributes=$_POST['Estudiante'];
+            if($model->save())
+                $this->redirect(array('view','id'=>$model->idEstudiante));
+        }
 
 		$this->render('update',array(
 			'model'=>$model,
+            'modelCSearch'=>$modelCSearch,
+            'nombreCentro'=>$nombreCentro,
 		));
 	}
 

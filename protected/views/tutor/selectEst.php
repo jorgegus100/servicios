@@ -38,13 +38,18 @@
 		'diasEstudiante',
 		*/
         array(
-            'template'=>'{Asignar}',
+            'template'=>'{Tutor}{T.Principal}',
             'class'=>'CButtonColumn',
             'buttons'=>array(
-            'Asignar'=>array(
-                    'url'=>'$this->grid->controller->createUrl("/analisis/selecAnalisis", array("idMed"=>$data->primaryKey,"id"=>'.$id.'))',
+            'Tutor'=>array(
+                    'url'=>'$this->grid->controller->createUrl("/tutor/asignarEst", array("idEst"=>$data->primaryKey,"id"=>'.$id.',"prin"=>0))',
                     //'click'=>'',
-                    'imageUrl'=>Yii::app()->request->baseUrl.'/themes/mattskitchen/img/ActionsAss.png',
+                    'imageUrl'=>Yii::app()->request->baseUrl.'/themes/blackboot/img/picture-check-icon.png',
+                ),
+            'T.Principal'=>array(
+                    'url'=>'$this->grid->controller->createUrl("/tutor/asignarEst", array("idEst"=>$data->primaryKey,"id"=>'.$id.',"prin"=>1))',
+                    //'click'=>'',
+                    'imageUrl'=>Yii::app()->request->baseUrl.'/themes/blackboot/img/picture-add-icon.png',
                 ),
             ),
         ),

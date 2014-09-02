@@ -8,14 +8,35 @@ $this->breadcrumbs=array(
 	'Update',
 );
 
-$this->menu=array(
-	array('label'=>'List Estudiante', 'url'=>array('index')),
-	array('label'=>'Create Estudiante', 'url'=>array('create')),
-	array('label'=>'View Estudiante', 'url'=>array('view', 'id'=>$model->idEstudiante)),
-	array('label'=>'Manage Estudiante', 'url'=>array('admin')),
-);
+$this->menu=$this->menuEstudiantes;
 ?>
 
-<h1>Update Estudiante <?php echo $model->idEstudiante; ?></h1>
+<h1>Modificar datos de estudiante <?php echo $model->nomEstudiante.' '.$model->apellEstudiante; ?></h1>
 
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<span>Centro Educativo <h1><?php echo $nombreCentro; ?></h1></span>
+
+<?php
+echo CHtml::link('Asignar Centro', '#', array(
+    'onclick'=>'$("#mydialog").dialog("open"); return false;',
+));
+
+$this->beginWidget('zii.widgets.jui.CJuiDialog', array(
+    'id'=>'mydialog',
+    // additional javascript options for the dialog plugin
+    'options'=>array(
+        'title'=>'Asignar Centro',
+        'autoOpen'=>false,
+        'width' => '600px',
+        //'height' => '600px',
+        'modal' => true,
+        //'resizable' => true,
+
+
+    ),
+));
+
+
+$this->renderPartial('asigCentro', array('modelCSearch'=>$modelCSearch, 'model'=>$model ));
+$this->endWidget('zii.widgets.jui.CJuiDialog');
+
+$this->renderPartial('_form', array('model'=>$model)); ?>

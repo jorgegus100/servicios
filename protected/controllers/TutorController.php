@@ -187,9 +187,27 @@ class TutorController extends Controller
 
     public function actionAsignarEst($id)
     {
-        $listEstudiantes=Estudiante::model()->findAll("idTutor='".$id."'");
+
+        $listaTutorias= Reltutorest::model()->findAll("idTutor='".$id."'");
+        $listEstudiantes=array();
+        foreach($listaTutorias as $rel)
+        {
+            $list=Estudiante::model()->findAll("idEstudiante='".$rel->idEstudiante."'");
+            $listEstudiantes+=$list;
+        }
+
         $modelNewEst=new Estudiante();
         $modelESearch=new Estudiante('search');
+        if(isset($_GET['idEst']))
+        {
+            $idEst=$_GET['idEst'];
+            $relTutEst= new Reltutorest();
+            $relTutEst->idTutor=$id;
+            $relTutEst->idEstudiante=$idEst;
+            $relTutEst->principalTutor=$_GET['prin'];
+            $relTutEst->save();
+
+        }
         $this->render('asignarEst',array(
             'model'=>$this->loadModel($id),
             'listEstudiantes'=>$listEstudiantes,

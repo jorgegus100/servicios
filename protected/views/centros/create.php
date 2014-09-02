@@ -7,12 +7,9 @@ $this->breadcrumbs=array(
 	'Create',
 );
 
-$this->menu=array(
-	array('label'=>'List Centros', 'url'=>array('index')),
-	array('label'=>'Manage Centros', 'url'=>array('admin')),
-);
+$this->menu=$this->menuCentros;
 ?>
 
-<h1>Create Centros</h1>
+<h1>Crear un Centro</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

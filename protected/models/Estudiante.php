@@ -58,14 +58,14 @@ class Estudiante extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nomEstudiante, apellEstudiante, ciEstudiante, idTutor, paisEst', 'required'),
+			array('nomEstudiante, apellEstudiante, ciEstudiante, paisEst', 'required'),
 			array('idTutor, sexEstudiante, codPostalEst, idCentroEst, telEstudiante, nroCuentaEst, tel2Estudiante, menuEst, comidaEst, desayunoEst, becaEst', 'numerical', 'integerOnly'=>true),
 			array('descuentoEst', 'numerical'),
 			array('nomEstudiante, apellEstudiante, secApellEstudante, ciEstudiante, cursoEstudiante, etapaEstudiante, numCasaEstudiante, pisoEstudiante, provinciaEstudiante, LocalidadEst, calleEstudiante, paisEst, emailEstudiante, dietaEstudiante, nutricionEst, diasEstudiante', 'length', 'max'=>50),
 			array('nacEstudiante', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idEstudiante, nomEstudiante, apellEstudiante, secApellEstudante, ciEstudiante, idTutor, sexEstudiante, nacEstudiante, cursoEstudiante, etapaEstudiante, numCasaEstudiante, pisoEstudiante, provinciaEstudiante, LocalidadEst, calleEstudiante, codPostalEst, paisEst, idCentroEst, telEstudiante, emailEstudiante, nroCuentaEst, dietaEstudiante, nutricionEst, tel2Estudiante, menuEst, comidaEst, desayunoEst, becaEst, descuentoEst, diasEstudiante', 'safe', 'on'=>'search'),
+			array('idEstudiante, nomEstudiante, apellEstudiante, secApellEstudante, ciEstudiante, sexEstudiante, nacEstudiante, cursoEstudiante, etapaEstudiante, numCasaEstudiante, pisoEstudiante, provinciaEstudiante, LocalidadEst, calleEstudiante, codPostalEst, paisEst, idCentroEst, telEstudiante, emailEstudiante, nroCuentaEst, dietaEstudiante, nutricionEst, tel2Estudiante, menuEst, comidaEst, desayunoEst, becaEst, descuentoEst, diasEstudiante', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -79,7 +79,7 @@ class Estudiante extends CActiveRecord
 		return array(
 			'asistenciases' => array(self::HAS_MANY, 'Asistencias', 'estudianteAsistencia'),
 			'idCentroEst0' => array(self::BELONGS_TO, 'Centros', 'idCentroEst'),
-			'idTutor0' => array(self::BELONGS_TO, 'Tutor', 'idTutor'),
+
 		);
 	}
 

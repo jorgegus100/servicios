@@ -27,7 +27,9 @@ $('.search-form form').submit(function(){
 
 
 
-<?php $this->widget('zii.widgets.grid.CGridView', array(
+<?php
+
+$this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'tutor-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
@@ -53,8 +55,18 @@ $('.search-form form').submit(function(){
 		'telf2Tutor',
 		'emailTutor',
 
-		array(
-			'class'=>'CButtonColumn',
-		),
+        array(
+            'template'=>'{view}{update}{Tutor}',
+            'class'=>'CButtonColumn',
+            'buttons'=>array(
+                'Tutor'=>array(
+                    'url'=>'$this->grid->controller->createUrl("/tutor/asignarEst",array("id"=>$data->primaryKey))',
+                    //'url'=>'$this->grid->controller->createUrl("/tutor/asignarEst", array("idEst"=>$data->primaryKey))',
+                    //'click'=>'',
+                    'imageUrl'=>Yii::app()->request->baseUrl.'/themes/blackboot/img/picture-check-icon.png',
+                ),
+
+            ),
+        ),
 	),
 )); ?>

@@ -22,6 +22,7 @@ class Controller extends CController
         array('label'=>'Crear', 'url'=>array('usuarios/create')),
 
     );
+
     public $menuEstudiantes=array(
         array('label'=>'Administrar Estudiantes', 'url'=>array('estudiante/admin')),
         array('label'=>'Crear Estudiante', 'url'=>array('estudiante/create')),
@@ -34,8 +35,7 @@ class Controller extends CController
     public $menuCentros=array(
         array('label'=>'Administrar Centros', 'url'=>array('centros/admin')),
         array('label'=>'Crear Centros', 'url'=>array('centros/create')),
-        array('label'=>'Administrar Pagadores', 'url'=>array('pagador/admin')),
-        array('label'=>'Crear Pagador', 'url'=>array('pagador/create')),
+
 
     );
     public $menuMenues=array(

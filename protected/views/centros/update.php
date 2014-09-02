@@ -8,14 +8,9 @@ $this->breadcrumbs=array(
 	'Update',
 );
 
-$this->menu=array(
-	array('label'=>'List Centros', 'url'=>array('index')),
-	array('label'=>'Create Centros', 'url'=>array('create')),
-	array('label'=>'View Centros', 'url'=>array('view', 'id'=>$model->idCentro)),
-	array('label'=>'Manage Centros', 'url'=>array('admin')),
-);
+$this->menu=$this->menuCentros;
 ?>
 
-<h1>Update Centros <?php echo $model->idCentro; ?></h1>
+<h1>Modificar datos del Centro <?php echo $model->nomCentro; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

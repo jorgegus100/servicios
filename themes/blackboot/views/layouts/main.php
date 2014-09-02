@@ -53,6 +53,7 @@
 						'items'=>array(
 
 							array('label'=>'Usuarios', 'url'=>array('/usuarios/admin'), 'visible'=>Yii::app()->user->getState('nivel')==5),
+							array('label'=>'Centros', 'url'=>array('/centros/admin'), 'visible'=>Yii::app()->user->getState('nivel')==5),
                             array('label'=>'Estudiantes', 'url'=>array('/estudiante/admin'), 'visible'=>Yii::app()->user->getState('nivel')==5),
                             array('label'=>'Tutores', 'url'=>array('/tutor/admin'), 'visible'=>Yii::app()->user->getState('nivel')==5),
                             array('label'=>'Pagadores', 'url'=>array('/pagador/admin'), 'visible'=>Yii::app()->user->getState('nivel')==5),
