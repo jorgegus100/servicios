@@ -181,8 +181,8 @@
 		<?php echo $form->error($model,'descuentoEst'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'diasEstudiante'); ?>
+	<div class="span6">
+		<?php echo $form->labelEx($model,'diasEstudiante',array("class"=>"span12")); ?>
         <?php echo CHtml::checkBoxList("weekdays","",array(
             "0"=>"Domingo",
             "1"=>"Lunes",
@@ -191,13 +191,12 @@
             "4"=>"Jueves",
             "5"=>"Viernes",
             "6"=>"Sabado",
-        ))
+        ),array("class"=>"span6"))
         ?>
-		<?php echo $form->textField($model,'diasEstudiante',array('size'=>50,'maxlength'=>50)); ?>
-		<?php echo $form->error($model,'diasEstudiante'); ?>
+		<?php echo $form->error($model,'diasEstudiante',array("class"=>"span12")); ?>
 	</div>
 
-	<div class="row buttons">
+	<div class="span12">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Guardar'); ?>
 	</div>
 

@@ -80,7 +80,7 @@
       <file leaf-file-name="_form.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/estudiante/_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="185" column="31" selection-start="6550" selection-end="6550" vertical-scroll-proportion="0.39011925" vertical-offset="3841" max-vertical-offset="4642">
+            <state line="200" column="10" selection-start="7043" selection-end="7043" vertical-scroll-proportion="0.95229983" vertical-offset="3841" max-vertical-offset="4620">
               <folding />
             </state>
           </provider>
@@ -718,7 +718,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/form.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="9" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.33279485" vertical-offset="1158" max-vertical-offset="3740" />
+        <state line="62" column="9" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.33279485" vertical-offset="1158" max-vertical-offset="3740">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/tutor/selectEst.php">
@@ -794,13 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/estudiante/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="3" selection-start="895" selection-end="895" vertical-scroll-proportion="-11.419354" vertical-offset="416" max-vertical-offset="1034">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/estudiante/asigCentro.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="22" selection-start="143" selection-end="143" vertical-scroll-proportion="9.967742" vertical-offset="419" max-vertical-offset="1034">
@@ -815,9 +810,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/estudiante/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="3" selection-start="895" selection-end="895" vertical-scroll-proportion="-11.419354" vertical-offset="416" max-vertical-offset="1034">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/estudiante/_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="31" selection-start="6550" selection-end="6550" vertical-scroll-proportion="0.39011925" vertical-offset="3841" max-vertical-offset="4642">
+        <state line="200" column="10" selection-start="7043" selection-end="7043" vertical-scroll-proportion="0.95229983" vertical-offset="3841" max-vertical-offset="4620">
           <folding />
         </state>
       </provider>
