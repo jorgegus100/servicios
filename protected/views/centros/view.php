@@ -2,10 +2,7 @@
 /* @var $this CentrosController */
 /* @var $model Centros */
 
-$this->breadcrumbs=array(
-	'Centroses'=>array('index'),
-	$model->idCentro,
-);
+
 
 $this->menu=$this->menuCentros;
 ?>

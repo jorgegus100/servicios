@@ -30,8 +30,6 @@
             'buttons'=>array(
                 'Asignar'=>array(
                     'url'=>'$this->grid->controller->createUrl("/estudiante/update",array("idCentro"=>$data->primaryKey,"id"=>'.$model->idEstudiante.'))',
-                    //'url'=>'$this->grid->controller->createUrl("/tutor/asignarEst", array("idEst"=>$data->primaryKey))',
-                    //'click'=>'',
                     'imageUrl'=>Yii::app()->request->baseUrl.'/themes/blackboot/img/Ok-icon.png',
                 ),
 

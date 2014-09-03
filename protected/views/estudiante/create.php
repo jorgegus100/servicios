@@ -7,9 +7,13 @@ $this->breadcrumbs=array(
 	'Create',
 );
 
-$this->menu=$this->menuEstudiantes;
+$this->menu=array(
+	array('label'=>'List Estudiante', 'url'=>array('index')),
+	array('label'=>'Manage Estudiante', 'url'=>array('admin')),
+);
 ?>
 
-<h1>Crear Estudiante</h1>
+<h1>Create Estudiante</h1>
 
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php $this->renderPartial('_form', array('model'=>$model,
+                                          )); ?>

@@ -32,7 +32,7 @@ class EstudianteController extends Controller
 				'users'=>array('*'),
 			),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions'=>array('create','update','admin','delete','create2'),
+                'actions'=>array('create','update','admin','delete'),
                 'users'=>array('@'),
             ),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -64,10 +64,21 @@ class EstudianteController extends Controller
 	{
 		$model=new Estudiante;
         $modelUs=new Usuarios;
+        $modelCSearch=new Centros('search');
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
+        if(isset($_GET['idCentro']))
+        {
 
+            $idCentro=$_GET['idCentro'];
+            $centro=Centros::model()->findByPk($idCentro);
+            $nombreCentro=$centro->nomCentro;
+        }
+        else
+        {
+            $nombreCentro="No Asignado";
+        }
 		if(isset($_POST['Estudiante']))
 		{
 			$model->attributes=$_POST['Estudiante'];
@@ -80,31 +91,28 @@ class EstudianteController extends Controller
             $modelUs->save();
             $model->idUsuario=$modelUs->idUsuario;
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->idEstudiante));
+				$this->redirect(array('view','id'=>$model->idEstudiante,'modelCSearch'=>$modelCSearch,));
 		}
 
 		$this->render('create',array(
 			'model'=>$model,
+            'modelCSearch'=>$modelCSearch,
+            'nombreCentro'=>$nombreCentro
 		));
 	}
-    public function actionCreate2()
-    {
 
-
-        $this->render('create2');
-    }
 	/**
 	 * Updates a particular model.
 	 * If update is successful, the browser will be redirected to the 'view' page.
 	 * @param integer $id the ID of the model to be updated
 	 */
-	public function actionUpdate($id)
-	{
-		$model=$this->loadModel($id);
+    public function actionUpdate($id)
+    {
+        $model=$this->loadModel($id);
         $modelCSearch=new Centros('search');
 
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+        // Uncomment the following line if AJAX validation is needed
+        // $this->performAjaxValidation($model);
 
 
         if(isset($_GET['idCentro']))
@@ -125,12 +133,12 @@ class EstudianteController extends Controller
                 $this->redirect(array('view','id'=>$model->idEstudiante));
         }
 
-		$this->render('update',array(
-			'model'=>$model,
+        $this->render('update',array(
+            'model'=>$model,
             'modelCSearch'=>$modelCSearch,
             'nombreCentro'=>$nombreCentro,
-		));
-	}
+        ));
+    }
 
 	/**
 	 * Deletes a particular model.

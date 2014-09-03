@@ -13,8 +13,6 @@ $this->menu=$this->menuEstudiantes;
 
 <h1>Modificar datos de estudiante <?php echo $model->nomEstudiante.' '.$model->apellEstudiante; ?></h1>
 
-<span>Centro Educativo <h1><?php echo $nombreCentro; ?></h1></span>
-
 <?php
 echo CHtml::link('Asignar Centro', '#', array(
     'onclick'=>'$("#mydialog").dialog("open"); return false;',
@@ -39,4 +37,4 @@ $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
 $this->renderPartial('asigCentro', array('modelCSearch'=>$modelCSearch, 'model'=>$model ));
 $this->endWidget('zii.widgets.jui.CJuiDialog');
 
-$this->renderPartial('_form', array('model'=>$model)); ?>
+$this->renderPartial('_form', array('model'=>$model,'modelCSearch'=>$modelCSearch,)); ?>

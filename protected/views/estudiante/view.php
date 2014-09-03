@@ -8,6 +8,28 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=$this->menuEstudiantes;
+echo CHtml::link('Asignar Centro', '#', array(
+    'onclick'=>'$("#mydialog").dialog("open"); return false;',
+));
+
+$this->beginWidget('zii.widgets.jui.CJuiDialog', array(
+    'id'=>'mydialog',
+    // additional javascript options for the dialog plugin
+    'options'=>array(
+        'title'=>'Asignar Centro',
+        'autoOpen'=>false,
+        'width' => '600px',
+        //'height' => '600px',
+        'modal' => true,
+        //'resizable' => true,
+
+
+    ),
+));
+
+
+$this->renderPartial('asigCentro', array('modelCSearch'=>$modelCSearch, 'model'=>$model ));
+$this->endWidget('zii.widgets.jui.CJuiDialog');
 ?>
 
 <h1>Datos Estudiante <?php echo $model->nomEstudiante.' '.$model->apellEstudiante.' '.$model->secApellEstudante; ?></h1>
