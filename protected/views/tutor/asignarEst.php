@@ -48,25 +48,25 @@ $this->menu=$this->menuEstudiantes;
 <h1>Consulta de datos personales</h1>
 <div class="row-fluid">
     <?php
-    echo CHtml::link('Crear Estudiante', '#', array(
+    /*echo CHtml::link('Crear Estudiante', '#', array(
         'onclick'=>'$("#mydialog").dialog("open"); return false;',
     ));
 
-    echo " || ";
+    echo " || ";*/
     echo CHtml::link('Asignar Estudiante', '#', array(
         'onclick'=>'$("#mydialog1").dialog("open"); return false;',
-    ));
+    ));/*
     echo " || ";
     echo CHtml::link('Asignar co tutor', '#', array(
         'onclick'=>'$("#mydialog1").dialog("open"); return false;',
-    ));
+    ));*/
     $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
         'id'=>'mydialog',
         // additional javascript options for the dialog plugin
         'options'=>array(
             'title'=>'Crear Nuevo Estudiante',
             'autoOpen'=>false,
-            'width' => '600px',
+            'width' => '900px',
             //'height' => '600px',
             'modal' => true,
             //'resizable' => true,
@@ -76,7 +76,7 @@ $this->menu=$this->menuEstudiantes;
     ));
 
 
-    $this->renderPartial('_formEst', array('model'=>$modelNewEst ));
+    $this->renderPartial('_formEst', array('model'=>$modelNewEst,'modelCSearch'=>$modelCSearch ));
     $this->endWidget('zii.widgets.jui.CJuiDialog');
 
     $this->beginWidget('zii.widgets.jui.CJuiDialog', array(

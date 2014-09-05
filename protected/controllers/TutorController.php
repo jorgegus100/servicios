@@ -198,6 +198,7 @@ class TutorController extends Controller
 
         $modelNewEst=new Estudiante();
         $modelESearch=new Estudiante('search');
+        $modelCSearch=new Centros('search');
         if(isset($_GET['idEst']))
         {
             $idEst=$_GET['idEst'];
@@ -208,11 +209,22 @@ class TutorController extends Controller
             $relTutEst->save();
 
         }
+        if(isset($_POST['Estudiante']))
+        {
+            $modelNewEst->attributes=$_POST['Estudiante'];
+            $modelNewEst->idTutor=$id;
+            $modelNewEst->save();
+
+        }
+
+
+
         $this->render('asignarEst',array(
             'model'=>$this->loadModel($id),
             'listEstudiantes'=>$listEstudiantes,
             'modelNewEst'=>$modelNewEst,
             'modelESearch'=>$modelESearch,
+            'modelCSearch'=>$modelCSearch,
         ));
     }
 

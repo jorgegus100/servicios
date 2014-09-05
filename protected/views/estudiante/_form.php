@@ -4,7 +4,27 @@
 /* @var $form CActiveForm */
 
 
+echo '<h1>Nombre de Centro '.$nombreCentro.'</h1></br>';
 
+echo CHtml::link('Asignar Centro', '#', array(
+    'onclick'=>'$("#mydialog").dialog("open"); return false;',
+));
+
+$this->beginWidget('zii.widgets.jui.CJuiDialog', array(
+    'id'=>'mydialog',
+    // additional javascript options for the dialog plugin
+    'options'=>array(
+        'title'=>'Asignar Centro',
+        'autoOpen'=>false,
+        'width' => '600px',
+        //'height' => '600px',
+        'modal' => true,
+            //'resizable' => true,
+        ),
+    ));
+
+$this->renderPartial('asigCentro', array('modelCSearch'=>$modelCSearch, 'model'=>$model, 'create'=>$create ));
+$this->endWidget('zii.widgets.jui.CJuiDialog');
 ?>
 
 <div class="form">
@@ -210,7 +230,8 @@
 </div>
 <div class="span12">
 
-    <?php echo CHtml::checkBoxList("weekdays","",array(
+    <?php
+    echo CHtml::checkBoxList("weekdays","",array(
         "0"=>"Domingo",
         "1"=>"Lunes",
         "2"=>"Martes",
@@ -218,12 +239,14 @@
         "4"=>"Jueves",
         "5"=>"Viernes",
         "6"=>"Sabado",
-    ),array("class"=>"span6"))
+    ),
+    array("class"=>"span6")
+    )
     ?>
     <?php echo $form->error($model,'diasEstudiante',array("class"=>"span12")); ?>
 </div>
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Guardar'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

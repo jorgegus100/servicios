@@ -51,8 +51,10 @@ class EstudianteController extends Controller
 	 */
 	public function actionView($id)
 	{
+        $modelCSearch=new Centros('search');
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
+            'modelCSearch'=>$modelCSearch
 		));
 	}
 
@@ -77,11 +79,14 @@ class EstudianteController extends Controller
         }
         else
         {
+            $idCentro=0;
             $nombreCentro="No Asignado";
         }
 		if(isset($_POST['Estudiante']))
 		{
 			$model->attributes=$_POST['Estudiante'];
+			$model->idCentroEst=$idCentro;
+
             $modelUs->apellUsuario=$_POST['Estudiante']['apellEstudiante'];
             $modelUs->apell2Usuario=$_POST['Estudiante']['secApellEstudante'];
             $modelUs->nomUsuario=$_POST['Estudiante']['nomEstudiante'];
@@ -91,13 +96,15 @@ class EstudianteController extends Controller
             $modelUs->save();
             $model->idUsuario=$modelUs->idUsuario;
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->idEstudiante,'modelCSearch'=>$modelCSearch,));
+                $this->redirect(array('view','id'=>$model->idEstudiante));
+				//$this->redirect(array('view','id'=>$model->idEstudiante,'modelCSearch'=>$modelCSearch,));
 		}
 
 		$this->render('create',array(
 			'model'=>$model,
             'modelCSearch'=>$modelCSearch,
-            'nombreCentro'=>$nombreCentro
+            'nombreCentro'=>$nombreCentro,
+            'idCentro'=>$idCentro
 		));
 	}
 
@@ -115,6 +122,8 @@ class EstudianteController extends Controller
         // $this->performAjaxValidation($model);
 
 
+
+
         if(isset($_GET['idCentro']))
         {
 
@@ -122,13 +131,20 @@ class EstudianteController extends Controller
             $centro=Centros::model()->findByPk($idCentro);
             $nombreCentro=$centro->nomCentro;
         }
-        else
+        else if($model->idCentroEst==0)
         {
+            $idCentro=0;
             $nombreCentro="No Asignado";
+        }
+        else{
+            $idCentro=$model->idCentroEst;
+            $centro=Centros::model()->findByPk($idCentro);
+            $nombreCentro=$centro->nomCentro;
         }
         if(isset($_POST['Estudiante']))
         {
             $model->attributes=$_POST['Estudiante'];
+            $model->idCentroEst=$idCentro;
             if($model->save())
                 $this->redirect(array('view','id'=>$model->idEstudiante));
         }
@@ -137,6 +153,7 @@ class EstudianteController extends Controller
             'model'=>$model,
             'modelCSearch'=>$modelCSearch,
             'nombreCentro'=>$nombreCentro,
+            'idCentro'=>$idCentro
         ));
     }
 

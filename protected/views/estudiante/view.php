@@ -28,7 +28,7 @@ $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
 ));
 
 
-$this->renderPartial('asigCentro', array('modelCSearch'=>$modelCSearch, 'model'=>$model ));
+$this->renderPartial('asigCentro', array('modelCSearch'=>$modelCSearch, 'model'=>$model, 'create'=>0 ));
 $this->endWidget('zii.widgets.jui.CJuiDialog');
 ?>
 

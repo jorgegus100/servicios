@@ -10,7 +10,7 @@
 		'apellEstudiante',
 		'secApellEstudante',
 		'ciEstudiante',
-
+        'idCentroEst',
 		/*
 		'sexEstudiante',
 		'nacEstudiante',
@@ -23,7 +23,7 @@
 		'calleEstudiante',
 		'codPostalEst',
 		'paisEst',
-		'idCentroEst',
+
 		'telEstudiante',
 		'emailEstudiante',
 		'nroCuentaEst',

@@ -6,10 +6,7 @@ $this->breadcrumbs=array(
 	'Estudiantes',
 );
 
-$this->menu=array(
-	array('label'=>'Create Estudiante', 'url'=>array('create')),
-	array('label'=>'Manage Estudiante', 'url'=>array('admin')),
-);
+$this->menu=$this->menuEstudiantes;
 ?>
 
 <h1>Estudiantes</h1>

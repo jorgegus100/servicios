@@ -2,6 +2,7 @@
 /* @var $this CentrosController */
 /* @var $model Centros */
 /* @var $form CActiveForm */
+
 ?>
 
 <div class="form">
